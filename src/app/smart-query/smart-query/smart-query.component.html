@@ -1,0 +1,8 @@
+<input #search
+  (click)="onClick($event)"
+  (keypress)="onKeyPress($event)"
+  (keyup)="onKeyUpArrows($event)">
+
+<ul>
+  <li *ngFor="let res of results">{{ res }}</li>
+</ul>
